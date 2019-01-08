@@ -110,7 +110,6 @@ public class GdxTests {
 		Box2DTestCollection.class,
 		Bresenham2Test.class,
 		BufferUtilsTest.class,
-		BulletTestCollection.class,
 		CollectionsTest.class,
 		ColorTest.class,
 		ContainerTest.class,

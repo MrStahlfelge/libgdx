@@ -100,9 +100,9 @@ task addSource {
     doLast {
         sourceSets.main.compileClasspath += files(project(':tests:gdx-tests').sourceSets.main.allJava.srcDirs)
         sourceSets.main.compileClasspath += files(project(':backends:gdx-backends-gwt').sourceSets.main.allJava.srcDirs)
-        sourceSets.main.compileClasspath += files(project(':extensions:gdx-box2d:gdx-box2d-gwt').sourceSets.main.allJava.srcDirs)
-        sourceSets.main.compileClasspath += files(project(':extensions:gdx-controllers:gdx-controllers').sourceSets.main.allJava.srcDirs)
-        sourceSets.main.compileClasspath += files(project(':extensions:gdx-controllers:gdx-controllers-gwt').sourceSets.main.allJava.srcDirs)
+        sourceSets.main.compileClasspath += files(project(':extensions:gdx-box2d-parent:gdx-box2d-gwt').sourceSets.main.allJava.srcDirs)
+        sourceSets.main.compileClasspath += files(project(':extensions:gdx-controllers-parent:gdx-controllers').sourceSets.main.allJava.srcDirs)
+        sourceSets.main.compileClasspath += files(project(':extensions:gdx-controllers-parent:gdx-controllers-gwt').sourceSets.main.allJava.srcDirs)
         sourceSets.main.compileClasspath += files(project(':gdx').sourceSets.main.allJava.srcDirs)
     }
 }

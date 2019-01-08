@@ -63,10 +63,8 @@
     <module>backends/gdx-backend-headless</module>
     <module>backends/gdx-backend-moe</module>
     <module>extensions/gdx-tools</module>
-    <module>extensions/gdx-box2d</module>
-    <module>extensions/gdx-bullet</module>
-    <module>extensions/gdx-bullet/jni/maven</module>
-    <module>extensions/gdx-controllers</module>
+    <module>extensions/gdx-box2d-parent</module>
+    <module>extensions/gdx-controllers-parent</module>
     <module>extensions/gdx-freetype</module>
     <module>extensions/gdx-freetype/jni/maven</module>    
   </modules>

@@ -28,7 +28,6 @@ include ":backends:gdx-backends-gwt"
 
 include ":extensions:gdx-box2d-parent:gdx-box2d"
 include ":extensions:gdx-box2d-parent:gdx-box2d-gwt"
-include ":extensions:gdx-bullet"
 include ":extensions:gdx-controllers-parent:gdx-controllers"
 include ":extensions:gdx-controllers-parent:gdx-controllers-android"
 include ":extensions:gdx-controllers-parent:gdx-controllers-desktop"

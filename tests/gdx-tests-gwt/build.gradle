@@ -31,8 +31,8 @@ def httpFilePort = 8080
 dependencies {
     compile project(":tests:gdx-tests")
     compile project(":backends:gdx-backends-gwt")
-    compile project(":extensions:gdx-box2d:gdx-box2d-gwt")
-    compile project(":extensions:gdx-controllers:gdx-controllers-gwt")
+    compile project(":extensions:gdx-box2d-parent:gdx-box2d-gwt")
+    compile project(":extensions:gdx-controllers-parent:gdx-controllers-gwt")
 }
 
 gwt {

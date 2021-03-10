@@ -38,6 +38,7 @@ public class DefaultGwtInput extends AbstractInput implements GwtInput {
 	boolean justTouched = false;
 	private IntMap<Integer> touchMap = new IntMap<Integer>(20);
 	private boolean[] touched = new boolean[MAX_TOUCHES];
+	private final float[] pressure = new float[MAX_TOUCHES];
 	private int[] touchX = new int[MAX_TOUCHES];
 	private int[] touchY = new int[MAX_TOUCHES];
 	private int[] deltaX = new int[MAX_TOUCHES];
@@ -249,11 +250,6 @@ public class DefaultGwtInput extends AbstractInput implements GwtInput {
 	}
 
 	@Override
-	public float getPressure () {
-		return getPressure(0);
-	}
-
-	@Override
 	public float getPressure (int pointer) {
 		return isTouched(pointer) ? 1 : 0;
 	}
@@ -348,6 +344,7 @@ public class DefaultGwtInput extends AbstractInput implements GwtInput {
 		if (peripheral == Peripheral.HardwareKeyboard) return !GwtApplication.isMobileDevice();
 		if (peripheral == Peripheral.MultitouchScreen) return isTouchScreen();
 		if (peripheral == Peripheral.OnscreenKeyboard) return GwtApplication.isMobileDevice();
+		if (peripheral == Peripheral.Pressure) return true;
 		if (peripheral == Peripheral.Vibrator) return false;
 		return false;
 	}

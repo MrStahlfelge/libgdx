@@ -360,11 +360,6 @@ public class DefaultIOSInput extends AbstractInput implements IOSInput {
 	}
 
 	@Override
-	public float getPressure () {
-		return pressures[0];
-	}
-
-	@Override
 	public float getPressure (int pointer) {
 		return pressures[pointer];
 	}

@@ -339,11 +339,6 @@ public class DefaultAndroidInput extends AbstractInput implements AndroidInput {
 	}
 
 	@Override
-	public float getPressure () {
-		return getPressure(0);
-	}
-
-	@Override
 	public float getPressure (int pointer) {
 		return pressure[pointer];
 	}

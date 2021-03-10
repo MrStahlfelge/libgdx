@@ -320,11 +320,6 @@ public class LwjglAWTInput extends AbstractInput implements MouseMotionListener,
 	}
 
 	@Override
-	public float getPressure () {
-		return getPressure(0);
-	}
-
-	@Override
 	public float getPressure (int pointer) {
 		return isTouched(pointer) ? 1 : 0;
 	}

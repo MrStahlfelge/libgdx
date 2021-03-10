@@ -273,11 +273,6 @@ public class DefaultLwjgl3Input extends AbstractInput implements Lwjgl3Input {
 	}
 
 	@Override
-	public float getPressure () {
-		return getPressure(0);
-	}
-
-	@Override
 	public float getPressure (int pointer) {
 		return isTouched(pointer) ? 1 : 0;
 	}

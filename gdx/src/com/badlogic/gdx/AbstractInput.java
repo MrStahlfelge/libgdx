@@ -15,6 +15,11 @@ public abstract class AbstractInput implements Input {
     }
 
     @Override
+    public float getPressure () {
+        return getPressure(0);
+    }
+
+    @Override
     public boolean isKeyPressed(int key) {
         if (key == Input.Keys.ANY_KEY) {
             return pressedKeyCount > 0;
